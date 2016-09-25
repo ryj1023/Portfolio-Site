@@ -47,16 +47,21 @@ h2 {
   padding: 1%;
   margin-right: 2%;
   border-style: solid;
+  text-decoration: none;
 }
 .app-wrapper {
   padding-top: 10%;
 }
 .content-footer {
   text-align: center;
-  margin-top: 9%;
+  margin-top: 15%;
 }
 .social li {
   display: inline-block;
   color: white;
+}
+.social li img {
+  height: 40px;
+  width: 40px;
 }
 /*# sourceMappingURL=portfolio-site.1.0.0.css.map */

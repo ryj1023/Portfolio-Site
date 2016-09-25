@@ -30,8 +30,8 @@
     "build:css:minified": "npm run clean:css:minified && lessc --clean-css --source-map css/index.less build/$npm_package_name.$npm_package_version.min.css",
     "watch:css:minified": "npm run build:css:minified && chokidar 'css/**/*.(css|less)' -c 'npm run build:css:minified'",
     "clean:css:minified": "rm -f build/$npm_package_name.$npm_package_version.min.css build/$npm_package_name.$npm_package_version.min.css.map",
-    "build:image": "npm run clean:image && cp *gif build/ &&  cp *jpg build/",
-    "clean:image": "rm -f build/*.gif && rm -f build/*.jpg "
+    "build:image": "npm run clean:image && cp *gif build/ &&  cp *jpg build/  &&  cp *png build/",
+    "clean:image": "rm -f build/*.gif && rm -f build/*.jpg && rm -f build/*.png "
   },
   "repository": {
     "type": "git",

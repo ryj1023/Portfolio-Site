@@ -4,7 +4,7 @@
 body {
   background-image: url('../austria.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 100%;
   z-index: 0;
 }
@@ -63,5 +63,14 @@ h2 {
 .social li img {
   height: 40px;
   width: 40px;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    max-height: 100%;
+    background-size: cover;
+  }
+  .content-wrapper a {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=portfolio-site.1.0.0.css.map */

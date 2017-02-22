@@ -56,6 +56,12 @@ h2 {
 .app-wrapper {
   padding-top: 3%;
 }
+.app-wrapper a:hover {
+  color: red;
+  font-size: 30px;
+  background-color: white;
+  color: black;
+}
 .content-footer {
   text-align: center;
   margin-top: 15%;

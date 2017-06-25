@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -8,27 +8,85 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<section class="body-wrapper">
-		<section class="content-wrapper">
+	<section class="header">
+		<div class=header-name>
 			<h1 class="name">Ryan Johnson</h1>
 			<h2>Web Developer</h2>
-			<p>Latest Projects</p>
-				<div class="app-wrapper">
-					<a href="https://ryj1023.github.io/Discover-The-Music-App/build/" target="_blank">Discover New Music</a>
-					<a href="http://ryj1023.github.io/Fitness-Quiz/build/" target="_blank">Fitness Assessment</a>
-					<a href="https://ryj1023.github.io/Around-The-World/build/" target="_blank">Around The World</a>
-					<a href="https://ryj1023.github.io/The-Thought-Corner/build/" target="_blank">The Thought Corner</a>
-				</div>
-		</section>	
+			  <select class="dropdown" onchange="window.open(this.options[this.selectedIndex].value)">
+        <option value="#A">About</option>
+        <option value="#B">Portfolio</option>
+        <option value="#C">Contact</option>
+    </select>
+		</div>
+		<div class='nav-elements'>
+			<ul>
+				<li><a href="#A">About</a></li>
+				<li><a href="#B">Portfolio</a></li>
+				<li><a href="#C">Contact</a></li>
+			</ul>
+			<form>
+</form>
+		</div>
+	</section>
+	<div class="about" id='A'>
+		<div class="about-content">
+			<h1>About Ryan</h1>
+			<p>I am a Full Stack and WordPress Developer with 3 years experience in creating responsive websites and applications for an optimal user experience. I specialize in building applications using the MEAN stack, jQuery, PHP, and React/Redux. I am graduate of Thinkful coding school.</p>
+		</div>
+	</div>
+	<section class="featured-work" id="B">
+			<ul class="app-wrapper">
+				<a href="https://discover-new-music.herokuapp.com/" target="_blank">
+					 <div id="li-wrapper1">
+						<li>
+							<img src="Discover-New-Music.png" alt="" >	
+						</li>
+						<div id="app-info1">
+							<p>This app is for anyone that's really into music (isn't everybody anyway?). Finally a place where the someone can find new sounds based on artists and bands they listen to, and also get tickets for any upcoming shows in their area. Think Spotify, YouTube, and stubhub all in one.</p>
+						</div>
+					</div>
+				</a>
+				<a href="http://ryj1023.github.io/Fitness-Quiz/build/" target="_blank">
+					<div id="li-wrapper2">
+						<li>
+							<img src="Fitness-Assessment.png" alt="">			
+						</li>
+							<div id="app-info2">
+								<p>This fitness assessment is a perfect platform for users all over the fitness spectrum. It is made to obtain information about the user by asking a series of questions about weight, height, goals, and current fitness activity. It then takes this information, displays a reccommended daily nutrient intake, allows a food search which returns nutrient information, and selects custom workout regimens for the user.</p>
+							</div>
+					</div>
+				</a>
+				<a href="http://around-the-world-node.herokuapp.com/" target="_blank">
+					<div id="li-wrapper3">
+						<li>
+							<img src="Around-The-World.png" alt="">
+						</li>
+							<div id="app-info3">
+								<p>Around The World offers the user a look into virtually any location of their choice and get detailed information on activities they might be interested in, as well as the price of a plane ticket to that destination. This app is useful for the traveler interested in planning a trip and would like to know the best spots for them to do the things they love, and to discover new attractions they have not see or done yet. This platform allows the user to get a feel of how they will lay out their itinerary for their trip, and how much money they will have to budget.</p>
+							</div>
+					</div>
+				</a>
+				<a href="https://ryj1023.github.io/The-Thought-Corner/build/" target="_blank">
+					<div id="li-wrapper4">
+						<li>
+							<img src="The-Thought-Corner.png" alt="">
+						</li>
+							<div id="app-info4">
+								<p>In an age where we have information at our fingertips, this app provides a single stop for just about any users interest. The artcles pull from the "New York Times" API, so the articles will always be credible and vast. This platform is perfect for the user that wants to stay informed and would also just like to stay in touch with topics specific to their interests.</p>
+							</div>
+					</div>
+				</a>
+					
+				</ul>
+	</section>	
 		  <footer class="content-footer">
 		  <p>Contact Me</p>
 	    <ul class="social">
 	      <li><a href="https://github.com/ryj1023" target="_blank"><img src="github-sociocon.png"></a></li>
 	      <li><a href="https://www.linkedin.com/in/ryan-johnson-495537119?trk=nav_responsive_tab_profile" target="_blank"><img src="linkedin-logo.png"></a></li>
-	      <li><a id='google' href="https://plus.google.com/108704185538516740383" target="_blank"><img src="Google-1.png"></a></li>
+	      <li id="C"><a id='google' href="https://plus.google.com/108704185538516740383" target="_blank"><img src="Google-1.png"></a></li>
 	    </ul>
 	  </footer>
-	</section>
 </body>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!--script src="portfolio-site.1.0.0.js"></script-->

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mkdir": "mkdir -p build",
-    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css && npm run build:js && npm run build:image",
+    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css && npm run build:js",
     "watch": "npm run watch:html & npm run watch:css & npm run watch:js",
     "clean": "rm -rf build",
     "build:html": "npm run clean:html && cp *.html build/",
@@ -30,7 +30,6 @@
     "build:css:minified": "npm run clean:css:minified && lessc --clean-css --source-map css/index.less build/$npm_package_name.$npm_package_version.min.css",
     "watch:css:minified": "npm run build:css:minified && chokidar 'css/**/*.(css|less)' -c 'npm run build:css:minified'",
     "clean:css:minified": "rm -f build/$npm_package_name.$npm_package_version.min.css build/$npm_package_name.$npm_package_version.min.css.map",
-    "build:image": "npm run clean:image && cp *gif build/ &&  cp *jpg build/  &&  cp *png build/",
     "clean:image": "rm -f build/*.gif && rm -f build/*.jpg && rm -f build/*.png "
   },
   "repository": {
@@ -49,6 +48,7 @@
   "dependencies": {
     "angular": "^1.5.7",
     "angular-route": "^1.5.8",
+    "express": "^4.17.0",
     "jquery": "^3.1.1"
   },
   "devDependencies": {

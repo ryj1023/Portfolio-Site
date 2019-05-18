@@ -42,10 +42,10 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
 
-/***/ }
+/***/ })
 /******/ ]);
 //# sourceMappingURL=portfolio-site.1.0.0.js.map

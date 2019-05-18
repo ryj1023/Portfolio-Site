@@ -5,45 +5,48 @@
       <title>Ryan's Dev Life</title>
       <link rel="stylesheet" href="build/portfolio-site.1.0.0.css">
       <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
    </head>
    <body>
       <section class="header position-sticky">
-         <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+         <nav class="navbar navbar-expand-lg navbar-light w-100 p-0">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<div></div>
+				<div></div>
+				<div></div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
+               <ul class="navbar-nav mr-auto d-flex align-items-center">
+						<li class="nav-item">
+							<a class="nav-link home text-white" href="#">Ryan Johnson</span></a>
+						</li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                     <a class="nav-link text-white font-weight-bold" href="#about">About <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                     <a class="nav-link text-white font-weight-bold" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#contact">Contact <span class="sr-only">(current)</span></a>
+                     <a class="nav-link text-white font-weight-bold" href="#contact">Contact <span class="sr-only">(current)</span></a>
                   </li>
                </ul>
             </div>
 			</nav>
 		</section>
 		<section>
-			<div class="text-center hero my-3">
-				<h1 class="name">Ryan Johnson</h1>
-				<h2>Web Developer</h2>
+			<div class="text-center hero position-relative mb-3">
+				<h1 class='text-white'>Front End Web Developer</h1>
 			</div>
 		</section>
-      <section class='container'>
-         <div class='row about' id='about'>
-            <div class="col about-content">
-               <h1>About Ryan</h1>
-               <p>I am a Full Stack JavaScript and WordPress Developer with 3 years experience in creating responsive websites and applications for an optimal user experience. I specialize in building applications using the MEAN stack, jQuery, PHP, and React/Redux. I am graduate of Thinkful coding school.</p>
-            </div>
-         </div>
-         <div class="row featured-work" id="portfolio">
+		<section id='about' class='about-content m-3'>
+			<h1>My Story</h1>
+			<p>I am a Full Stack JavaScript and WordPress Developer with 3 years experience in creating responsive websites and applications for an optimal user experience. I specialize in building applications using the MEAN stack, jQuery, PHP, and React/Redux. I am graduate of Thinkful coding school.</p>
+		</section>
+      <section class='container-fluid'>
+         <div class="row featured-work mb-3" id="portfolio">
             <div class='col'>
-               <div class='card mb-3'>
+               <div class='card my-3'>
                   <div class='card-body row'>
                      <div class='col-12 col-lg-6''>
                         <a href="https://discover-new-music.herokuapp.com/" target="_blank">
@@ -94,9 +97,9 @@
             </div>
          </div>
       </section>
-      <footer class="content-footer" id='contact'>
-         <p>Contact Me</p>
-         <div class="d-flex justify-content-center social">
+      <footer class="content-footer text-center" id='contact'>
+         <p class='text-white font-weight-bold m-0 py-2'>Contact Me</p>
+         <div class="d-flex justify-content-center social m-0 pb-2">
             <a href="https://github.com/ryj1023" target="_blank"><img src="github-sociocon.png"></a>
             <a href="https://www.linkedin.com/in/ryan-johnson-495537119?trk=nav_responsive_tab_profile" target="_blank"><img src="linkedin-logo.png"></a>
             <a id='google' href="https://plus.google.com/108704185538516740383" target="_blank"><img src="Google-1.png"></a>

@@ -3,13 +3,33 @@
   top: 0;
   z-index: 2;
 }
+h1,
+.home {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+}
+.navbar,
+.content-footer {
+  background: #ff5b4d;
+}
+.navbar-toggler div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
 .hero {
-  height: 190px;
-  background-color: #2098D1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../IMG_3336.jpeg');
+  height: 450px;
+}
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .content-footer {
   height: 100px;
-  background-color: #2098D1;
 }
 img {
   width: 100%;
@@ -17,7 +37,7 @@ img {
 .social img {
   width: 40px;
 }
-.container {
+.featured-work {
   background: #f1f2f4;
 }
 /*# sourceMappingURL=portfolio-site.1.0.0.css.map */

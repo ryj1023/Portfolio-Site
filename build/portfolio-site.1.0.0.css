@@ -8,7 +8,8 @@ h1,
   font-size: 20px;
 }
 h1,
-h2 {
+h2,
+.home {
   font-family: 'Anton', sans-serif;
 }
 .navbar,

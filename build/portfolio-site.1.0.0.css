@@ -5,11 +5,15 @@
 }
 h1,
 .home {
-  font-family: 'Anton', sans-serif;
   font-size: 20px;
 }
+h1,
+h2 {
+  font-family: 'Anton', sans-serif;
+}
 .navbar,
-.content-footer {
+.content-footer,
+.personal-projects {
   background: #ff5b4d;
 }
 .navbar-toggler div {
@@ -38,7 +42,7 @@ img {
   width: 40px;
 }
 .featured-work {
-  background: #f1f2f4;
+  background: black;
 }
 @media screen and (max-width: 992px) {
   .navbar {

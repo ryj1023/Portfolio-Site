@@ -12,6 +12,9 @@ h2,
 .home {
   font-family: 'Anton', sans-serif;
 }
+.navbar {
+  min-height: 50px;
+}
 .navbar,
 .content-footer,
 .personal-projects {
@@ -22,6 +25,13 @@ h2,
   height: 5px;
   background-color: white;
   margin: 6px 0;
+}
+.nav-link:hover {
+  background: #ff7878 !important;
+}
+.nav-link {
+  color: white !important;
+  white-space: nowrap;
 }
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../IMG_3336.jpeg');

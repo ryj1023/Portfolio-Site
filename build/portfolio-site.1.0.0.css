@@ -10,7 +10,7 @@ h1,
 h1,
 h2,
 .home {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 .navbar {
   min-height: 50px;
@@ -34,7 +34,7 @@ h2,
   white-space: nowrap;
 }
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../IMG_3336.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG_3336.jpeg");
   height: 450px;
 }
 .hero h1 {
@@ -54,6 +54,9 @@ img {
 }
 .featured-work {
   background: black;
+}
+.anchor {
+  margin-top: 46px;
 }
 @media screen and (max-width: 992px) {
   .navbar {

@@ -38,6 +38,10 @@ $(function() {
     scrollIfAnchor: function(href, pushToHistory) {
       var match, rect, anchorOffset;
 
+      if (href === "#") {
+        $("html, body").animate({ scrollTop: 0 }, 500);
+      }
+
       if (!this.ANCHOR_REGEX.test(href)) {
         return false;
       }
@@ -47,8 +51,8 @@ $(function() {
       if (match) {
         rect = match.getBoundingClientRect();
         anchorOffset = window.pageYOffset + rect.top - this.getFixedOffset();
-        window.scrollTo(window.pageXOffset, anchorOffset);
-
+        $("html, body").animate({ scrollTop: anchorOffset }, 500);
+        // window.scrollTo(window.pageXOffset, anchorOffset);
         // Add the state to history as-per normal anchor links
         if (HISTORY_SUPPORT && pushToHistory) {
           history.pushState({}, document.title, location.pathname + href);

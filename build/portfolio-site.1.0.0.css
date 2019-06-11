@@ -55,9 +55,6 @@ img {
 .featured-work {
   background: black;
 }
-.anchor {
-  margin-top: 46px;
-}
 @media screen and (max-width: 992px) {
   .navbar {
     min-height: 80px;

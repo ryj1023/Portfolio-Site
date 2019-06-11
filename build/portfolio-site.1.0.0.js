@@ -46,12 +46,19 @@
 
 	"use strict";
 	
+	$(function () {
+	  $(".navbar a").on("click", function () {
+	    if ($(".navbar-toggler").css("display") != "none") {
+	      $(".navbar-toggler").trigger("click");
+	    }
+	  });
+	});
 	(function (document, history, location) {
 	  var HISTORY_SUPPORT = !!(history && history.pushState);
 	
 	  var anchorScrolls = {
 	    ANCHOR_REGEX: /^#[^ ]+$/,
-	    OFFSET_HEIGHT_PX: 46,
+	    OFFSET_HEIGHT_PX: window.innerWidth > 992 ? 46 : 80,
 	
 	    /**
 	     * Establish events, and fix initial scroll position if a hash is provided.
@@ -79,6 +86,10 @@
 	    scrollIfAnchor: function scrollIfAnchor(href, pushToHistory) {
 	      var match, rect, anchorOffset;
 	
+	      if (href === "#") {
+	        $("html, body").animate({ scrollTop: 0 }, 500);
+	      }
+	
 	      if (!this.ANCHOR_REGEX.test(href)) {
 	        return false;
 	      }
@@ -88,8 +99,8 @@
 	      if (match) {
 	        rect = match.getBoundingClientRect();
 	        anchorOffset = window.pageYOffset + rect.top - this.getFixedOffset();
-	        window.scrollTo(window.pageXOffset, anchorOffset);
-	
+	        $("html, body").animate({ scrollTop: anchorOffset }, 500);
+	        // window.scrollTo(window.pageXOffset, anchorOffset);
 	        // Add the state to history as-per normal anchor links
 	        if (HISTORY_SUPPORT && pushToHistory) {
 	          history.pushState({}, document.title, location.pathname + href);

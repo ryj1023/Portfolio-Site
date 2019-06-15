@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="./build/portfolio-site.1.0.0.css">
       <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
    </head>
    <body>
       <section class="header position-sticky">
@@ -60,52 +60,79 @@
                <h1 class='text-white'>Personal Projects</h1>
             </div>
             <div class='col-12'>
-               <div class='card my-3'>
-                  <div class='card-body row'>
-                     <div class='col-12 col-lg-6''>
-                        <a href="https://discover-new-music.herokuapp.com/" target="_blank">
-                        <img src="./Discover-New-Music.png" class='mb-sm-2 mb-lg-auto' alt="" >
+                      <div id="projects-carousel" class="carousel slide d-flex align-items-center" data-interval='false'>
+                        <!-- <ol class="carousel">
+                          <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#projects-carousel" data-slide-to="1"></li>
+                          <li data-target="#projects-carousel" data-slide-to="2"></li>
+                        </ol> -->
+                        <div class="carousel-inner">
+                         
+                          <div class="carousel-item pr-2 active">
+                              <div class='card my-3'>
+                                 <div class='card-body row'>
+                                    <div class='col-12 col-md-6'>
+                                       <a href="https://discover-new-music.herokuapp.com/" target="_blank">
+                                       <img src="./Discover-New-Music.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
+                                       </a>
+                                    </div>
+                                    <div class='col-12 col-md-6 d-none d-md-flex'>
+                                          <p>This app is for anyone that's really into music (isn't everybody anyway?). Finally a place where the someone can find new sounds based on artists and bands they listen to, and also get tickets for any upcoming shows in their area. Think Spotify, YouTube, and stubhub all in one.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                        
+                          <div class="carousel-item pr-2">
+                              <div class='card my-3'>
+                                 <div class='card-body row'>
+                                    <div class='col-12 col-md-6'>
+                                       <a href="https://fitness-assessment.herokuapp.com/" target="_blank">
+                                       <img src="./Fitness-Assessment-Screenshot.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
+                                       </a>
+                                    </div>
+                                    <div class='col-12 col-md-6 d-none d-md-flex'>
+                                          <p>This fitness assessment is a perfect platform for users all over the fitness spectrum. It is made to obtain information about the user by asking a series of questions about weight, height, goals, and current fitness activity. It then takes this information, displays a reccommended daily nutrient intake, allows a food search which returns nutrient information, and selects custom workout regimens for the user.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item pr-2">
+                              <div class='card my-3'>
+                                 <div class='card-body row'>
+                                    <div class='col-12 col-md-6'>
+                                       <a href="https://solixfit.com/" target="_blank">
+                                       <img src="./solixfit.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
+                                       </a>
+                                    </div>
+                                    <div class='col-12 col-md-6 d-none d-md-flex'>
+                                          <p>Solixfit is the ultimate workout and nutrition logging platform. This mobile app, written in React-Native, removes all the complexity of keeping track of everything you are eating and how well you are keeping up with your work out regimen, allowing you to focus on being the best version of yourself. With features like a color-coded nutrition goal system, acheivement badges, and the ablity to share 
+                                                your achievements with your daily logs, this app is truly a all-in-one solution for those who are serius about getting (and staying) healthy. </p>
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+                              <img src='./left-arrow.svg'/>
+                          <span class="sr-only">Previous</span>
                         </a>
-                     </div>
-                     <div class='col-12 col-lg-6''>
-                        <p>This app is for anyone that's really into music (isn't everybody anyway?). Finally a place where the someone can find new sounds based on artists and bands they listen to, and also get tickets for any upcoming shows in their area. Think Spotify, YouTube, and stubhub all in one.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class='card mb-3'>
-                  <div class='card-body row'>
-                     <div class='col-12 col-lg-6'>
-                        <a href="https://fitness-assessment.herokuapp.com/" target="_blank">
-                        <img src="./Fitness-Assessment-Screenshot.png" class='mb-sm-2 mb-lg-auto' alt="" >
+                        <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+                              <img src='./right-arrow.svg'/>
+                          <span class="sr-only">Next</span>
                         </a>
-                     </div>
-                     <div class='col-12 col-lg-6'>
-                        <p>This fitness assessment is a perfect platform for users all over the fitness spectrum. It is made to obtain information about the user by asking a series of questions about weight, height, goals, and current fitness activity. It then takes this information, displays a reccommended daily nutrient intake, allows a food search which returns nutrient information, and selects custom workout regimens for the user.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class='card my-3'>
-                  <div class='card-body row'>
-                     <div class='col-12 col-lg-6''>
-                        <a href="https://solixfit.com/" target="_blank">
-                        <img src="./solixfit.png" class='mb-sm-2 mb-lg-auto' alt="" >
-                        </a>
-                     </div>
-                     <div class='col-12 col-lg-6''>
-                        <p>Solixfit is the ultimate workout and nutrition logging platform. This mobile app, written in React-Native, removes all the complexity of keeping track of everything you are eating and how well you are keeping up with your work out regimen, allowing you to focus on being the best version of yourself. With features like a color-coded nutrition goal system, acheivement badges, and the ablity to share 
-                           your achievements with your daily logs, this app is truly a all-in-one solution for those who are serius about getting (and staying) healthy. </p>
-                     </div>
-                  </div>
-               </div>
+                      </div>
          </div>
       </section>
-      <footer class="anchor content-footer text-center" id='contact'>
-         <p class='text-white font-weight-bold m-0 py-2'>Contact Me</p>
-         <div class="d-flex justify-content-center social m-0 pb-2">
-            <a href="https://github.com/ryj1023" target="_blank"><img src="./github-sociocon.png"></a>
-            <a href="https://www.linkedin.com/in/ryan-johnson-495537119?trk=nav_responsive_tab_profile" target="_blank"><img src="./linkedin-logo.png"></a>
-            <a id='google' href="https://plus.google.com/108704185538516740383" target="_blank"><img src="./Google-1.png"></a>
-			</div>
+      <footer class="anchor content-footer text-center d-flex align-items-center justify-content-center" id='contact'>
+         <div>
+            <p class='text-white font-weight-bold m-0 py-2'>Contact Me</p>
+            <div class="d-flex justify-content-center social m-0 pb-2">
+               <a href="https://github.com/ryj1023" target="_blank"><img src="./github-sociocon.png"></a>
+               <a href="https://www.linkedin.com/in/ryan-johnson-495537119?trk=nav_responsive_tab_profile" target="_blank"><img src="./linkedin-logo.png"></a>
+               <a id='google' href="https://plus.google.com/108704185538516740383" target="_blank"><img src="./Google-1.png"></a>
+            </div>
+         </div>
       </footer>
    </body>
    <script src="./node_modules/jquery/dist/jquery.min.js"></script>

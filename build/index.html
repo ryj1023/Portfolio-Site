@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-      <link href='./favicon.ico' type='image/x-icon'>
+      <link  href='./favicon.ico' type='image/x-icon' rel="icon">
    </head>
    <body>
       <section class="header position-sticky">
@@ -60,7 +60,7 @@
             <div class='col-12'>
                <div id="projects-carousel" class="carousel slide d-flex align-items-center" data-interval='false'>
                   <div class="carousel-inner">
-                     <div class="carousel-item px-2 active">
+                     <div class="carousel-item px-2">
                         <div class='card my-3'>
                            <div class='card-body row'>
                               <div class='col-12 col-md-6'>
@@ -69,7 +69,22 @@
                                  </a>
                               </div>
                               <div class='col-12 col-md-6 d-none d-md-flex'>
-                                    <p>This app is for anyone that's really into music (isn't everybody anyway?). Finally a place where the someone can find new sounds based on artists and bands they listen to, and also get tickets for any upcoming shows in their area. Think Spotify, YouTube, and stubhub all in one.</p>
+                                    <p>This app is for anyone that's really into music (isn't everybody anyway?). Finally a place where the someone can find new sounds based on artists and bands they listen to, and also get tickets for any upcoming shows in their area. Think Spotify, YouTube, and StubHub all in one.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item active px-2">
+                        <div class='card my-3'>
+                           <div class='card-body row'>
+                              <div class='col-12 col-md-6'>
+                                 <a href="https://solixfit.com/" target="_blank">
+                                 <img src="./solixfit.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
+                                 </a>
+                              </div>
+                              <div class='col-12 col-md-6 d-none d-md-flex'>
+                                    <p>Solixfit is the ultimate workout and nutrition logging platform. This mobile app, written in React-Native, removes all the complexity of keeping track of everything you are eating and how well you are keeping up with your work out regimen, allowing you to focus on being the best version of yourself. With features like a color-coded nutrition goal system, acheivement badges, and the ablity to share 
+                                          your achievements with your daily logs, this app is truly a all-in-one solution for those who are serius about getting (and staying) healthy. </p>
                               </div>
                            </div>
                         </div>
@@ -88,21 +103,6 @@
                            </div>
                         </div>
                      </div>
-                     <div class="carousel-item px-2">
-                        <div class='card my-3'>
-                           <div class='card-body row'>
-                              <div class='col-12 col-md-6'>
-                                 <a href="https://solixfit.com/" target="_blank">
-                                 <img src="./solixfit.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
-                                 </a>
-                              </div>
-                              <div class='col-12 col-md-6 d-none d-md-flex'>
-                                    <p>Solixfit is the ultimate workout and nutrition logging platform. This mobile app, written in React-Native, removes all the complexity of keeping track of everything you are eating and how well you are keeping up with your work out regimen, allowing you to focus on being the best version of yourself. With features like a color-coded nutrition goal system, acheivement badges, and the ablity to share 
-                                          your achievements with your daily logs, this app is truly a all-in-one solution for those who are serius about getting (and staying) healthy. </p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
                         <img class='arrow-svg' src='./prev.png'/>
@@ -117,8 +117,10 @@
       </section>
       <footer class="anchor content-footer text-center d-flex align-items-center justify-content-center" id='contact'>
          <div>
-            <p class='text-white font-weight-bold m-0 py-2'>Contact Me</p>
             <div class="d-flex justify-content-center social m-0 pb-2">
+                  <form method="get" class='d-flex justify-content-center mr-1' action="https://ryansdevlife.com/assets/downloads/resume.pdf">
+                     <button type="submit" class="text-dark button-download border-0 bd-white p-2">Download Resume</button>
+                  </form>
                <a href="https://github.com/ryj1023" target="_blank"><img src="./github-sociocon.png"></a>
                <a href="https://www.linkedin.com/in/ryan-johnson-495537119?trk=nav_responsive_tab_profile" target="_blank"><img src="./linkedin-logo.png"></a>
                <a id='google' href="https://plus.google.com/108704185538516740383" target="_blank"><img src="./Google-1.png"></a>

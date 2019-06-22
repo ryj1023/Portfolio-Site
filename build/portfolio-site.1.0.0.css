@@ -9,7 +9,8 @@ h1,
 }
 h1,
 h2,
-.home {
+.home,
+button {
   font-family: "Anton", sans-serif;
 }
 .navbar {
@@ -58,8 +59,15 @@ h2,
 .social img {
   width: 40px;
 }
+.button-download {
+  border-radius: 2rem;
+}
+.button-download:hover {
+  background: black !important;
+  color: white !important;
+}
 .featured-work {
-  background: black;
+  background: #222222;
 }
 #projects-carousel {
   min-height: 400px;

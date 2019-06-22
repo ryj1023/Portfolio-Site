@@ -63,7 +63,7 @@ button {
   border-radius: 2rem;
 }
 .button-download:hover {
-  background: black !important;
+  background: #222222 !important;
   color: white !important;
 }
 .featured-work {

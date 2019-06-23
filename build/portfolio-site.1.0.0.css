@@ -50,7 +50,7 @@ button {
   transform: translate(-50%, -50%);
 }
 .content-footer {
-  height: 200px;
+  height: 100px;
 }
 .project-image {
   width: 100%;
@@ -61,6 +61,7 @@ button {
 }
 .button-download {
   border-radius: 2rem;
+  border-color: #222222 !important;
 }
 .button-download:hover {
   background: #222222 !important;
@@ -75,6 +76,21 @@ button {
 .carousel-control-next,
 .carousel-control-prev {
   width: 10% !important;
+}
+.quote-carousel p {
+  max-width: 700px;
+  font-size: 1.4em;
+}
+.quote-author {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+.bullet-point-list {
+  background: #fff9e9;
+  border-top: 6px;
+  border-color: #ffd220;
 }
 @media screen and (max-width: 992px) {
   .navbar {

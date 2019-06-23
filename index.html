@@ -5,7 +5,7 @@
       <title>Ryan's Dev Life</title>
       <link rel="stylesheet" href="./build/portfolio-site.1.0.0.css">
       <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
       <link  href='./favicon.ico' type='image/x-icon' rel="icon">
    </head>
@@ -13,15 +13,15 @@
       <section class="header position-sticky">
          <nav class="navbar navbar-expand-lg navbar-light w-100 p-0">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<div></div>
-				<div></div>
-				<div></div>
+               <div></div>
+               <div></div>
+               <div></div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav mr-auto d-flex align-items-center">
-						<li class="nav-item text-center w-100">
-							<a class="nav-link home w-100 p-4 p-lg-2" href="#">Ryan Johnson</span></a>
-						</li>
+                  <li class="nav-item text-center w-100">
+                     <a class="nav-link home w-100 p-4 p-lg-2" href="#">Ryan Johnson</span></a>
+                  </li>
                   <li class="nav-item text-center w-100 h-100">
                      <a class="nav-link w-100 font-weight-bold p-4 p-lg-2" href="#about">About <span class="sr-only">(current)</span></a>
                   </li>
@@ -30,102 +30,203 @@
                   </li>
                </ul>
             </div>
-			</nav>
-		</section>
-		<section>
-			<div class="text-center hero position-relative mb-3">
-				<h1 class='text-white'>Front End Web Developer</h1>
-			</div>
-		</section>
-		<section id='about' class='anchor about-content m-3'>
-			<h2 class='h1'>My Story</h2>
-			<p>I have been creating enterprise-level software, specializing in web and mobile app development, since 2016. 
-               My focus is creating scalable and sophisticated software solutions for the ever-evolving web development industry. I spent the last two years as a front end developer at <a href='http://beachhousesinparadise.com/'>Beach Houses in Paradise</a>,
-               a vacation rental platform based out of Palm Beach Gardens, Florida, specializing in ocean-to-river beach houses. In the past I've worked as a freelance developer, customizing personal websites and mobile applications in React-Native.
-               About halfway through my Computer Science degree I decided fast-track my learning experience and enter the workforce early by joining <a target='_blank' href='https://thinkful.com'>Thinkful</a>, an immersive mentorship-based online Bootcamp focusing on the most 
-               cutting-edge technologies in Web Development. After graduating, I became a mentor myself, teaching students the fundamentals of Web Development while sharpening my own skillset. I have had the pleasure of working with amazing people, and have learned a great deal 
-               about what separates the good developers from the bad ones.</p>
-         <h2>Languages and frameworks</h2>
-         <p>The bulk of my experience in web development is focused on JavaScript frameworks, predominantly React and Vue. For design and layout, I work both with raw HTML/CSS as well as with frameworks like Bootstap and Foundation.
-            Although most of my professional experience focuses on the client-side, I have experience in integrating with servers using Node.js (Express) as well as  NoSQL (MongoDB) and SQL (Microsoft SQL Server, MySQL) database interaction.
-         I have extensive experience with both REST API and GraphQL data-fetching practices. A few other languages and frameworks I've worked with are PHP, C, C++, Java, and Angular.</p>
-		</section>
-      <section class='container-fluid'>
-         <div class="anchor row featured-work" id="portfolio">
-            <div class='pt-3 text-center w-100 personal-projects'>
-               <h1 class='text-white'>Personal Projects</h1>
+         </nav>
+      </section>
+      <section>
+         <div class="text-center hero position-relative">
+            <h1 class='text-white'>Front End Web Developer</h1>
+         </div>
+      </section>
+      <div id='about' class='py-2 text-center w-100 personal-projects'>
+         <h1 class='text-white mb-0'>About Me</h1>
+      </div>
+      <div class='container mb-3'>
+         <div class='row'>
+            <div class='col'>
+               <section class='anchor about-content m-3'>
+                  <h2 class='mb-0'>My Story</h2>
+                  <p>I have been creating enterprise-level software, specializing in web and mobile app development, since 2016. 
+                     My focus is creating scalable and sophisticated software solutions for the ever-evolving web development industry. I spent the last two years as a front end developer at <a href='http://beachhousesinparadise.com/'>Beach Houses in Paradise</a>,
+                     a vacation rental platform based out of Palm Beach Gardens, Florida, specializing in ocean-to-river beach houses. In the past I've worked as a freelance developer, customizing personal websites and mobile applications in React-Native.
+                     About halfway through my Computer Science degree I decided fast-track my learning experience and enter the workforce early by joining <a target='_blank' href='https://thinkful.com'>Thinkful</a>, an immersive mentorship-based online Bootcamp focusing on the most 
+                     cutting-edge technologies in Web Development. After graduating, I became a mentor myself, teaching students the fundamentals of Web Development while sharpening my own skillset. I have had the pleasure of working with amazing people, and have learned a great deal 
+                     about what separates the good developers from the bad ones. Through the years I've developed a philosophy I live by when it comes to writing clean and consise code:
+                  </p>
+               </section>
+               <div class='m-auto d-flex justify-content-center'>
+                  <div class='d-none d-lg-inline-block'>
+                     <img src='professor.png'/>
+                  </div>
+                  <div class='bullet-point-list p-2'>
+                     <div class='d-flex'>
+                        <div>
+                           <img src='bullet_black.png'/>
+                        </div>
+                        <div>
+                              <strong>Scalability.</strong> <span>Always layout the foundation of what you are building with potential expansion in mind. Even simple projects tend to evolve quickly and become more complex over time. Making sure to not code yourself into a corner saves a lot of time in the long run.</span>
+                        </div>
+                     </div>
+                     <div class='d-flex'>
+                           <div>
+                              <img src='bullet_black.png'/>
+                           </div>
+                           <div>
+                                 <strong>Performance.</strong> <span>Optimizing for speed makes a significant difference in the amount of traffic to your project. Slower loading times can cost a company a fortune, so doing things like minification and reducing page renders are something to always strive for. </span>
+                           </div>
+                        </div>
+                        <div class='d-flex'>
+                              <div>
+                                 <img src='bullet_black.png'/>
+                              </div>
+                              <div>
+                                    <strong>Testing.</strong> <span>It's hard to account for every use-case, but adequate testing helps to diagnose issues and minimize bugs, saving you tons of time in the future. Adopting a test-driven development approach with unit, integration, and automation tests is important—especially for larger projects. </span>
+                              </div>
+                        </div>
+                        <div class='d-flex'>
+                              <div>
+                                 <img src='bullet_black.png'/>
+                              </div>
+                              <div>
+                                    <strong>Clean Code.</strong> <span>Although it's great to be able to show off your skills to make performance boosts to your code, if the readability expense is greater than the performance issue your code is meant to resolve, try to second guess your approach in favor of clean and clear code you or other developers can come back to and understand in the future.</span>
+                              </div>
+                        </div>
+                  </div>
+               </div>
             </div>
-            <div class='col-12'>
-               <div id="projects-carousel" class="carousel slide d-flex align-items-center" data-interval='false'>
-                  <div class="carousel-inner">
-                     <div class="carousel-item px-2">
-                        <div class='card my-3'>
-                           <div class='card-body row'>
-                              <div class='col-12 col-md-6'>
-                                 <a href="https://discover-new-music.herokuapp.com/" target="_blank">
-                                 <img src="./Discover-New-Music.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
-                                 </a>
-                              </div>
-                              <div class='col-12 col-md-6 d-none d-md-flex'>
-                                    <p>This app is for anyone that's really into music (isn't everybody anyway?). Finally a place where the someone can find new sounds based on artists and bands they listen to, and also get tickets for any upcoming shows in their area. Think Spotify, YouTube, and StubHub all in one.</p>
-                              </div>
+         </div>
+      </div>
+      <section class='container-fluid mb-3'>
+         <div class="anchor row featured-work" id="portfolio">
+         <div class='py-2 text-center w-100 personal-projects'>
+            <h1 class='text-white mb-0'>Personal Projects</h1>
+         </div>
+         <div class='col-12'>
+            <div id="projects-carousel" class="carousel slide d-flex align-items-center" data-interval='false'>
+               <div class="carousel-inner">
+                  <div class="carousel-item px-2">
+                     <div class='card my-3'>
+                        <div class='card-body row'>
+                           <div class='col-12 col-md-6'>
+                              <a href="https://discover-new-music.herokuapp.com/" target="_blank">
+                              <img src="./Discover-New-Music.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
+                              </a>
                            </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item active px-2">
-                        <div class='card my-3'>
-                           <div class='card-body row'>
-                              <div class='col-12 col-md-6'>
-                                 <a href="https://solixfit.com/" target="_blank">
-                                 <img src="./solixfit.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
-                                 </a>
-                              </div>
-                              <div class='col-12 col-md-6 d-none d-md-flex'>
-                                    <p>Solixfit is the ultimate workout and nutrition logging platform. This mobile app, written in React-Native, removes all the complexity of keeping track of everything you are eating and how well you are keeping up with your work out regimen, allowing you to focus on being the best version of yourself. With features like a color-coded nutrition goal system, acheivement badges, and the ablity to share 
-                                          your achievements with your daily logs, this app is truly a all-in-one solution for those who are serius about getting (and staying) healthy. </p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item px-2">
-                        <div class='card my-3'>
-                           <div class='card-body row'>
-                              <div class='col-12 col-md-6'>
-                                 <a href="https://fitness-assessment.herokuapp.com/" target="_blank">
-                                 <img src="./Fitness-Assessment-Screenshot.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
-                                 </a>
-                              </div>
-                              <div class='col-12 col-md-6 d-none d-md-flex'>
-                                    <p>This fitness assessment is a perfect platform for users all over the fitness spectrum. It is made to obtain information about the user by asking a series of questions about weight, height, goals, and current fitness activity. It then takes this information, displays a reccommended daily nutrient intake, allows a food search which returns nutrient information, and selects custom workout regimens for the user.</p>
-                              </div>
+                           <div class='col-12 col-md-6 d-none d-md-flex'>
+                              <p>This app is for anyone that's really into music (isn't everybody anyway?). Finally a place where the someone can find new sounds based on artists and bands they listen to, and also get tickets for any upcoming shows in their area. Think Spotify, YouTube, and StubHub all in one.</p>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
-                        <img class='arrow-svg' src='./prev.png'/>
-                     <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
-                        <img class='arrow-svg' src='./next.png'/>
-                     <span class="sr-only">Next</span>
-                  </a>
+                  <div class="carousel-item active px-2">
+                     <div class='card my-3'>
+                        <div class='card-body row'>
+                           <div class='col-12 col-md-6'>
+                              <a href="https://solixfit.com/" target="_blank">
+                              <img src="./solixfit.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
+                              </a>
+                           </div>
+                           <div class='col-12 col-md-6 d-none d-md-flex'>
+                              <p>Solixfit is the ultimate workout and nutrition logging platform. This mobile app, written in React-Native, removes all the complexity of keeping track of everything you are eating and how well you are keeping up with your work out regimen, allowing you to focus on being the best version of yourself. With features like a color-coded nutrition goal system, acheivement badges, and the ablity to share 
+                                 your achievements with your daily logs, this app is truly a all-in-one solution for those who are serius about getting (and staying) healthy. 
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item px-2">
+                     <div class='card my-3'>
+                        <div class='card-body row'>
+                           <div class='col-12 col-md-6'>
+                              <a href="https://fitness-assessment.herokuapp.com/" target="_blank">
+                              <img src="./Fitness-Assessment-Screenshot.png" class='project-image mb-sm-2 mb-md-auto' alt="" >
+                              </a>
+                           </div>
+                           <div class='col-12 col-md-6 d-none d-md-flex'>
+                              <p>This fitness assessment is a perfect platform for users all over the fitness spectrum. It is made to obtain information about the user by asking a series of questions about weight, height, goals, and current fitness activity. It then takes this information, displays a reccommended daily nutrient intake, allows a food search which returns nutrient information, and selects custom workout regimens for the user.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+               <img class='arrow-svg' src='./prev.png'/>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+               <img class='arrow-svg' src='./next.png'/>
+               <span class="sr-only">Next</span>
+               </a>
             </div>
          </div>
       </section>
-      <footer class="anchor content-footer text-center d-flex align-items-center justify-content-center" id='contact'>
-         <div>
-            <div class="d-flex justify-content-center social m-0 pb-2">
-                  <form method="get" class='d-flex justify-content-center mr-1' action="assets/downloads/resume.pdf">
-                     <button type="submit" class="font-weight-bold text-dark button-download border-0 bd-white p-2">Download Resume</button>
-                  </form>
-               <a href="https://github.com/ryj1023" target="_blank"><img src="./github-sociocon.png"></a>
-               <a href="https://www.linkedin.com/in/ryan-johnson-495537119?trk=nav_responsive_tab_profile" target="_blank"><img src="./linkedin-logo.png"></a>
-               <a id='google' href="https://plus.google.com/108704185538516740383" target="_blank"><img src="./Google-1.png"></a>
+      <section class='anchor about-content container'>
+         <div class='row'>
+            <div class='col'>
+               <h2 class='mb-0'>Languages and Frameworks</h2>
+               <p>The bulk of my experience in web development is focused on JavaScript frameworks, predominantly React and Vue. For design and layout, I work both with raw HTML/CSS as well as with frameworks like Bootstap and Foundation.
+                  Although most of my professional experience focuses on the client-side, I have experience in integrating with servers using Node.js (Express) as well as  NoSQL (MongoDB) and SQL (Microsoft SQL Server, MySQL) database interaction.
+                  I have extensive experience with both REST API and GraphQL data-fetching practices. A few other languages and frameworks I've worked with are PHP, C, C++, Java, and Angular.
+               </p>
             </div>
-            <p class='text-white'>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
          </div>
-         
+      </section>
+      <div>
+         <div class="d-flex justify-content-center social m-0 pb-2">
+            <form method="get" class='d-flex justify-content-center mr-1' action="assets/downloads/resume.pdf">
+               <button type="submit" class="font-weight-bold text-dark button-download bd-white p-2">Download Resume</button>
+            </form>
+            <a href="https://github.com/ryj1023" target="_blank"><img src="./github-sociocon.png"></a>
+            <a href="https://www.linkedin.com/in/ryan-johnson-495537119?trk=nav_responsive_tab_profile" target="_blank"><img src="./linkedin-logo.png"></a>
+            <a id='google' href="https://plus.google.com/108704185538516740383" target="_blank"><img src="./Google-1.png"></a>
+         </div>
+      </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner d-flex align-items-center" style='height: 200px'>
+            <blockquote class="quote-carousel carousel-item quote-carousel text-center active">
+               <p class="d-block w-100 m-auto">
+                  “We forget: In life, it doesn’t matter what happens to you or where you came from. It matters what you do with what happens and what you’ve been given.” 
+               </p>
+               <cite class='m-auto'>
+               <span class='quote-author'>- Ryan Holliday</span>
+               </cite>
+            </blockquote>
+            <blockquote class="quote-carousel carousel-item quote-carousel text-center">
+               <p class="d-block w-100 m-auto">
+                  “Have no fear of perfection—you’ll never reach it.” 
+               </p>
+               <cite class='m-auto'>
+               <span class='quote-author'>–Salvador Dali</span>
+               </cite>
+            </blockquote>
+            <blockquote class="quote-carousel carousel-item quote-carousel text-center">
+               <p class="d-block w-100 m-auto">
+                  "Things that are traditionally sync don’t have to “feel” sync. Things that are traditionally async don’t have to 'feel' async. Be intentional and bridge the gap when you need."
+               </p>
+               <cite class='m-auto'>
+               <span class='quote-author'>- Dan Abramov</span>
+               </cite>
+            </blockquote>
+            <blockquote class="quote-carousel carousel-item quote-carousel text-center">
+               <p class="d-block w-100 m-auto">
+                  "I have been impressed with the urgency of doing. Knowing is not enough; we must apply. Being willing is not enough; we must do.""
+               </p>
+               <cite class='m-auto'>
+               <span class='quote-author'>- Leonardo da Vinci</span>
+               </cite>
+            </blockquote>
+            <blockquote class="quote-carousel carousel-item quote-carousel text-center">
+               <p class="d-block w-100 m-auto">
+                  “Design is not just what it looks like and feels like. Design is how it works.” 
+               </p>
+               <cite class='m-auto'>
+               <span class='quote-author'>- Steve Jobs</span>
+               </cite>
+            </blockquote>
+         </div>
+      </div>
+      <footer class="p-2 d-block d-md-flex justify-content-between anchor content-footer text-center align-items-center" id='contact'>
+         <p class='text-white'>Icons by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> - <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> - <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+         <p class='text-white'><span>&#169</span> Ryan Johnson, 2019</p>
       </footer>
    </body>
    <script src="./node_modules/jquery/dist/jquery.min.js"></script>

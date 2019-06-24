@@ -52,6 +52,9 @@ button {
 .content-footer {
   height: 100px;
 }
+.bullet-list-text {
+  margin-top: 0.2rem;
+}
 .project-image {
   width: 100%;
   height: 300px;

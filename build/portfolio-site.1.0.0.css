@@ -70,8 +70,9 @@ button {
   background: #222222 !important;
   color: white !important;
 }
+body,
 .featured-work {
-  background: #222222;
+  background: #222222 !important;
 }
 #projects-carousel {
   min-height: 400px;
